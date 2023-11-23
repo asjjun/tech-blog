@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'asjjun blog',
-  domain: 'blog.2skydev.com',
+  domain: 'https://sj-dev-blog.vercel.app/',
   author: 'asjjun',
 
   // open graph metadata (optional)
