@@ -4,6 +4,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 module.exports = withBundleAnalyzer({
+  env: {
+    NOTION_API_KEY: process.env.NOTION_API_KEY,
+  },
   staticPageGenerationTimeout: 300,
   images: {
     domains: [

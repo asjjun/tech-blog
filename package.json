@@ -1,26 +1,14 @@
 {
-  "name": "nextjs-notion-starter-kit",
+  "name": "tech-blog",
   "version": "1.0.13",
   "private": true,
-  "description": "The perfect starter kit for building beautiful websites with Next.js and Notion.",
+  "description": "NEXT.JS와 노션 API를 커스텀한 기술 블로그",
   "author": {
-    "email": "2skydev@gmail.com",
-    "name": "2skydev",
-    "url": "https://github.com/2skydev"
+    "email": "asjjun@naver.com",
+    "name": "asjjun",
+    "url": "https://github.com/asjjun"
   },
-  "contributors": [
-    {
-      "email": "wmsttks@gmail.com",
-      "name": "yoonjihong",
-      "url": "https://github.com/yoonjihong"
-    },
-    {
-      "email": "webd200@gmail.com",
-      "name": "jong-hui",
-      "url": "https://github.com/jong-hui"
-    }
-  ],
-  "repository": "2skydev/blog",
+  "repository": "asjjun/tech-blog",
   "license": "MIT",
   "engines": {
     "node": ">=16"
@@ -30,6 +18,7 @@
     "build": "next build",
     "start": "next start",
     "deploy": "vercel deploy",
+    "vercel-deploy": "next build && next",
     "deps": "run-s deps:*",
     "deps:update": "[ -z $GITHUB_ACTIONS ] && yarn add notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:update on CI'",
     "deps:link": "[ -z $GITHUB_ACTIONS ] && yarn link notion-client notion-types notion-utils react-notion-x || echo 'Skipping deps:link on CI'",
