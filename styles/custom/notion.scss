@@ -299,6 +299,17 @@ body {
     .notion-aside {
       display: none;
     }
+
+    .notion-page-cover-wrapper {
+      width: 100%;
+      height: 30vh;
+      min-height: 30vh;
+      max-height: 30vh;
+      display: flex;
+      visibility: visible;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   // 메인페이지가 아닌 모든 페이지
