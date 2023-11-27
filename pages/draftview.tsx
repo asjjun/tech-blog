@@ -4,9 +4,10 @@ import { NotionPage } from 'components';
 import { domain } from 'lib/config';
 import { resolveNotionPage } from 'lib/resolve-notion-page';
 
-export const getServerSideProps = async () => {
+export const getServerSideProps = async ({ params }) => {
   try {
-    const props = await resolveNotionPage(domain, null, { draftView: true });
+    const slug = params.slug; // Assuming your dynamic segment is named 'slug'
+    const props = await resolveNotionPage(domain, slug, { draftView: true });
 
     return { props };
   } catch (err) {
