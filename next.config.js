@@ -21,4 +21,7 @@ module.exports = withBundleAnalyzer({
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  config: {
+    runtime: 'experimental-edge'
+  }
 });
