@@ -1,4 +1,5 @@
-import got from 'got';
+// @ts-ignore
+import got from "got";
 import lqip from 'lqip-modern';
 import pMap from 'p-map';
 import pMemoize from 'p-memoize';
